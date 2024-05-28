@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title> Shopping Cart</title>
+</head>
+<body>
+    <h1 class="welcome-title " >Welcome to Our Supermarket</h1>
+
+
+    <div class="cart" id="cart">
+        <div class="item" id="item1">
+            <img src="http://lepidor.com.tn/wp-content/uploads/farine-patissiere-1.png" alt="Farine">
+            <span>Farine</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item1', 1)">+</button>
+            <span id="quantity-item1">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item1', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item1')">Delete</button>
+            <span>DT0.9</span>
+        </div>
+
+        <div class="item" id="item2">
+            <img src="http://www.warda.tn/sites/default/files/2023-03/semoule-fine-list.png" alt="Semoule">
+            <span>Semoule</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item2', 1)">+</button>
+            <span id="quantity-item2">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item2', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item2')">Delete</button>
+            <span>DT0.8</span>
+        </div>
+        <div class="item" id="item3">
+            <img src="http://www.delice.tn/wp-content/uploads/2023/04/lait-demi-ecreme.png" alt="Lait">
+            <span>Lait</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item3', 1)">+</button>
+            <span id="quantity-item3">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item3', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item3')">Delete</button>
+            <span>DT1.5</span>
+        </div>
+        <div class="item" id="item4">
+            <img src="http://www.espacemanager.com/sites/default/files/sucre-blanc_1607.jpg" alt="Sucre">
+            <span>Sucre</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item4', 1)">+</button>
+            <span id="quantity-item4">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item4', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item4')">Delete</button>
+            <span>DT1.2</span>
+        </div>
+        <div class="item" id="item5">
+            <img src="http://courses.monoprix.tn/lac/131081-large_default/yaourt-%C3%A0-boire.jpg" alt="Yaourt à boire">
+            <span>Yaourt à boire</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item5', 1)">+</button>
+            <span id="quantity-item5">1</span>
+            <button class="quantity-btn" onclick="adjustQuantity('item5', -1)">-</button>
+            <button class="delete-btn" onclick="deleteItem('item5')">Delete</button>
+            <span>DT1.15</span>
+        </div>
+        
+
+
+        <div class="total" id="total">Total: DT0.00</div>
+    </div>
+
+    <script src="./code.js"></script>
+</body>
+</html>
